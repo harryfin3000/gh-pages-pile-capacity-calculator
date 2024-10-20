@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driven Pile - Axial Capacity Calculator using CPT</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <img src="images/university-logo.png" alt="University Logo" class="logo">
+        <h1>Axial Capacity Calculator using CPT</h1>
+    </header>
+    <main>
+        <h2>Driven Pile Calculator</h2>
+        <section id="input-section">
+            <h3>Input CPT Data</h3>
+            <form id="cpt-form">
+                <label for="cpt-file">Upload CPT Data (CSV/TXT):</label>
+                <input type="file" id="cpt-file" name="cpt-file" accept=".csv,.txt" required>
+                <button type="submit">Calculate Capacity</button>
+            </form>
+        </section>
+        <section id="results-section" style="display: none;">
+            <h3>Results</h3>
+            <table id="results-table">
+                <thead>
+                    <tr>
+                        <th>Depth (m)</th>
+                        <th>Axial Capacity (kN)</th>
+                    </tr>
+                </thead>
+                <tbody id="results-body">
+                    <!-- Results will be inserted here by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your University Name. All rights reserved.</p>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
